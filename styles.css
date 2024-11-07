@@ -44,3 +44,8 @@ li {
     text-indent: -22px;
     margin-left: 22px;
 }
+
+footer {
+    border-top: 2px solid darkslateblue;
+    padding: 10px 0px;
+}
