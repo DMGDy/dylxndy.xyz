@@ -29,7 +29,8 @@
 
     <h2> Summary </h2>
     <p>
-    	My name is Dylan. Current/almost former Computer Engineering student at Western Michigan University in
+    	My name is Dylan Dy (or Dylan-Matthew Garza). 
+	Current/almost former Computer Engineering student at Western Michigan University in
 	Kalamazoo, Michigan. I will graduate this upcoming December (2024).   
     </p>
     <p>
@@ -79,8 +80,46 @@
 	<li> <a href="https://github.com/DMGDy/statuses">statuses(in C)</a>: Shows battery, time, and date.</li>
 
       </ul>
+    </li>
+    <li> Multi-input automotive testing device where I was responsible for multiple Software/embedded Software components.
+      <ul>
+        <li> <strong>Custom embedded Linux image using the 
+	<a href="https://www.yoctoproject.org/">Yocto Project</a> </strong>
+		 using STM32MP157f-dk2 with custom layer 
+	    <a href="https://github.com/DMGDy/meta-zf-project">here</a>. Built/ installed other software I wrote 
+	    for the project. Uses custom generated device tree from STM32CubeMx and patched stm32mp1 Linux kernel
+	    device tree. Also used a custom defconfig for loading necessary kernel modules.
+	</li>
+	<li> <strong>WebAssembly (WASM) application written in Rust</strong>
+				using the <a href="https://yew.rs/">Yew framework</a>.
+		(link to the repo <a href="https://github.com/DMGDy/zf-yew-app">here</a>) Simple user interface
+		for device testers to interact with to see real time results and remotely test devices.
+	</li>
+	<li> <strong>Custom API application server written in Rust</strong>
+		,meant to interact with server to load ARM Cortex-M4 firmware
+		and communicate to firmware regarding the state of the test, results, and recoreded realtime data
+		saved to the kernel trace buffer. 
+		(link to repo <a href="https://github.com/DMGDy/zf-webserver-app">here</a>. Used the
+		<a href="https://github.com/seanmonstar/warp">warp web server framework</a>, which is a minimal 
+		framework that allows filtering of HTTP requests. 
+      </ul>
+    </li>
 
 
     </br></br>
+    <footer>
+      <a href="https://www.vim.org/"><img src="./assets/buttons/vim.gif" alt="IDEs are for noobs" title="not even neovim!"></a>
+      <a href="https://archlinux.org/"><img src="./assets/buttons/archlinux.gif" alt="Arch Linux" title="This is running on arch!"></a>
+      <a href="https://www.kernel.org/"><img src="./assets/buttons/linux_powered.gif" alt="Linux Powered"
+	      title="Currently using LTS kernel 6.6.59"></a>
+      <a href="https://www.gnu.org/software/wget/"><img src="./assets/buttons/wget.gif" alt="wget program" title="How do you think I got these images
+	      on a server? (yes, I am editting on vim through ssh)"></a>
+      </br>
+      © 2024 <a href="dylxndy.xyz">Dylan Dy's Epic Website</a> | 
+      <a href="https://github.com/DMGDy/dylxndy.xyz">Webpage Source</a> </br>
+      <a href="https://www.gnu.org/licenses/agpl-3.0.en.html#license-text">
+        <img src="./assets/buttons/agplv3.png" alt="GNU AGPLv3 License" title="GNU AGPLv3 License"></a>
+      </br>
+    </footer>
   </body>
 </html>
