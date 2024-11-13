@@ -87,11 +87,12 @@
 
       </ul>
     </li>
-    <li> Multi-input automotive testing device where I was responsible for multiple Software/embedded Software components.
+    <li> Multi-input automotive testing device implemented on a heterogenous architecture (ARM Cortex-A7 and ARM Cortex-M4)
+         where I was responsible for multiple Software/embedded Software components.
       <ul>
         <li> <strong>Custom embedded Linux image using the 
 	<a href="https://www.yoctoproject.org/">Yocto Project</a> </strong>
-		 using STM32MP157f-dk2 with custom layer 
+		 using STM32MP157F-DK2 with custom layer.
 	    <a href="https://github.com/DMGDy/meta-zf-project">here</a>. Built/ installed other software I wrote 
 	    for the project. Uses custom generated device tree from STM32CubeMx and patched stm32mp1 Linux kernel
 	    device tree. Also used a custom defconfig for loading necessary kernel modules.
@@ -108,6 +109,13 @@
 		(link to repo <a href="https://github.com/DMGDy/zf-webserver-app">here</a>. Used the
 		<a href="https://github.com/seanmonstar/warp">warp web server framework</a>, which is a minimal 
 		framework that allows filtering of HTTP requests. 
+    <li> <strong> Microcontroller (ARM M4) Firmware </strong> created communication system between firmware and the 
+                  Rust server API 
+                  using the <a href="https://www.openampproject.org/">OpenAMP Project</a> to communicate over virtual UART.
+                  Communication consisted of status of loading the firmware, confirmation of necessary information for the test,
+                  and test progress. Also contributed to the debugging and development of the firmware that would test devices
+                  and was responsible for porting the necessary RCC configurations to the appropiate DeviceTree so that Linux
+                  may configure the system clock the same way the standalone firmware would on teh STM32MP157F-DK2.
       </ul>
     </li>
     <li> <a href="https://github.com/DMGDy/Game-of-Life-hare">Conway's Game of Life in Hare Programming Language</a>: Not really anything too fancy
@@ -126,7 +134,8 @@
         <img src="./assets/buttons/agplv3.png" alt="GNU AGPLv3 License" title="GNU AGPLv3 License"></a>
       </br>
       © 2024 <a href="dylxndy.xyz">Dylan Dy's Epic Website</a> | 
-     <p xmlns:cc="http://creativecommons.org/ns#">This work is licensed under
+    <a href="https://github.com/DMGDy/dylxndy.xyz">Webpage Source</a>
+     <p xmlns:cc="http://creativecommons.org/ns#">
       <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
           target="_blank" 
           rel="license noopener noreferrer"
@@ -147,10 +156,9 @@
           style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
           src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
           alt="">
-    </a
+    </a>
     </p>
-    </br>
-    <a href="https://github.com/DMGDy/dylxndy.xyz">Webpage Source</a>
+      </br>
       </br>
     </footer>
   </body>
