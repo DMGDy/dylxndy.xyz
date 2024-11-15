@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    margin: 0;
+    margin: 32px;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.25;
 }
