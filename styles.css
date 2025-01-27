@@ -14,10 +14,23 @@ body {
     line-height: 1.25;
 }
 
-.header {
-    font-size: 24px;
-    width: 100%;
-    color: #FF72FF;
+details {
+    border: 1px solid #BBB;
+    padding: 6px;
+    border-radius: 0px;
+    /* Make it not span full width */
+    /* Add some minimum width for usability */
+    min-width: 200px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2E417A;
+}
+
+summary:hover{
+    color: #54447D;
 }
 
 h1 {

@@ -71,7 +71,26 @@
     <h2> Projects </h2>
     These are some projects I am pretty happy about/proud of. 
     </br></br>
-    <li> <a href="https://github.com/DMGDy/eww-bar">custom bar</a> utilizing the <a href="https://github.com/elkowar/eww">
+    <li> <a href="https://github.com/DMGDy/epic-bar-rs">Custom Status Bar in Rust with GTK4</a>
+	    <details>
+		    <summary>Click to view more details</summary>
+		I wanted to implement my own status bar and not rely on as much abstractions as the Eww widgets bar. 
+		This status bar is implemented with GTK4 using the Rust bindings as well as the GTK4-layer-shell rust
+		bindings since this is primarily running on the Hyprland compositor. I plan to one day port it to dwm 
+		with dwm's IPC patch. I port over a lot of the rust code I used for the implementation in the Eww widget
+		bar to this. Luckily the language Eww widgets used was very similar to the relationship to how GTK objects
+		behave.
+
+		<ul>
+			<li> This is still very early in current developement, I recommend checking the github repository
+				for more detail on current development. (as of 26 January 2025)
+		</ul>
+	    </details>
+    </li>
+    <li> <a href="https://github.com/DMGDy/eww-bar">custom bar using Eww widgets and custom modules in Rust and C</a> 
+	    <details>
+		    <summary>Click to view more details</summary>
+	    utilizing the <a href="https://github.com/elkowar/eww">
           Eww</a> widget system. The bar does not use <em>any</em> silly, slow scripts to obtain system
   information. It instead uses <em>compiled</em> binaries written in <em>real</em> programming languages meant for 
   creating useful software. The compiled binaries dynamically generate the s-expressions for eww to generate 
@@ -86,10 +105,12 @@
 	<li> <a href="https://github.com/DMGDy/statuses">statuses(in C)</a>: Shows battery, time, and date.</li>
 
       </ul>
+	    </details>
     </li>
     <li> Multi-input automotive testing device implemented on a heterogenous architecture (ARM Cortex-A7 and ARM Cortex-M4)
          where I was responsible for multiple Software/embedded Software components.
-
+	<details> 
+		<summary>Click to view more details</summary>
 	 </br>
 	 A link to the presentation <a href="https://dylxndy.xyz/senior-design-presentation/">here</a>
 
@@ -128,6 +149,7 @@
                   and test progress. Also contributed to the debugging and development of the firmware that would test devices
                   and was responsible for porting the necessary RCC configurations to the appropiate DeviceTree so that Linux
                   may configure the system clock the same way the standalone firmware would on the STM32MP157F-DK2.
+	</details>
       </ul>
     </li>
     <li> <a href="https://github.com/DMGDy/Game-of-Life-hare">Conway's Game of Life in Hare Programming Language</a>: Not really anything too fancy
