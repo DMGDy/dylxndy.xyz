@@ -82,8 +82,33 @@
 		behave.
 
 		<ul>
+
 			<li> This is still very early in current developement, I recommend checking the github repository
 				for more detail on current development. (as of 26 January 2025)
+			</li>
+			<li> Reads and writes to <a href="https://wiki.hyprland.org/IPC/">Hyprland's IPC UNIX Sockets</a>
+				to check for workspace/client events to update widgets and to respond to click handlers
+				to switch to workspace/client.
+			</li>
+			<li> Uses seperate thread to periodically check for events to prevent blocking of GKT events (mouse events)
+				and uses Rust's 
+				<a href="https://doc.rust-lang.org/std/sync/mpsc/fn.channel.html">mpsc channels</a>
+				to communicate back to main thread if events occur so widgets can be updated.
+			</li>
+			<li> Obtains average CPU Load from <div class="code">/stat/proc</div> by sampling every second and calculating
+				the deltas between readings determining what percentage of the aggregate CPU time was spent in
+				idle states (<div class="code">idle</div> and <div class="code">irq</div>) vs non-idle states.
+			</li>
+			<li> Obtains CPU frequency by reading the current CPUs' speed under 
+				<div class="code">/sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq</div>
+				by opening each file in parallel with a thread handle and summing each frequency and dividing by
+				the number of CPUs (cores).
+			</li>
+			<li> Now contains a <div class="code">flake.nix</div> and 
+				<div class="code">flake.lock</div> for reproducibility for systems that use Nix.
+				Using <a href="https://github.com/edolstra/flake-compat">flake-compat</a> for
+				systems that have not yet started using the flake feature. 
+			</li>
 		</ul>
 	    </details>
     </li>
