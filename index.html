@@ -30,8 +30,7 @@
     <h2> Summary </h2>
     <p>
     	My name is Dylan Dy (or Dylan-Matthew Garza). 
-	Current/almost former Computer Engineering student at Western Michigan University in
-	Kalamazoo, Michigan. I will graduate this upcoming December (2024).   
+	I graduated with a degree in Computer Engineering.
     </p>
     <p>
     In terms of technologies, I am very interested in Linux, embedded Linux, programming (systems, embedded, firmware,
@@ -55,8 +54,12 @@
           <a href="https://artixlinux.org/">Artix Linux</a>, and 
 	  <a href="https://voidlinux.org/">Void Linux</a>.</li>
       <li> <a href="https://neovim.io/">neovim</a>/<a href="https://www.vim.org/">vim</a> and recently
-	       <a href="https://github.com/nix-community/nixvim">nixvim</a> (neovim configured by nix modules) since
-	       terminal-based text editors are for <strong>serious</strong> software developers.</li>
+	      <a href="https://github.com/nix-community/nixvim">nixvim</a> (neovim configured by nix modules) <s>since
+		      terminal-based text editors are for <strong>serious</strong> software developers.</s></li>
+      <li> <a href="https://en.wikipedia.org/wiki/Ed_(software)">ed</a>: The early text editor that was used to write the 
+	      C programming language and UNIX. Only <strong>REAL</strong> engineers use this one. Despite no code-completion,
+	      integrated debugger, syntax highlighting/checking, it was used to write 2 very relevant technologies of today.
+	      Just a parallel to common modern development environments and the people who use them :-)
       <li><a href="https://dwm.suckless.org/">dwm</a> (tiling window manager)
 	       but nowadays to be future-proof by using <a href="https://wayland.freedesktop.org/">Wayland</a>, 
 	       I now use <a href="https://hyprland.org/">hyprland</a> (with dwm-like bindings and behavior).</li>
@@ -71,6 +74,18 @@
     <h2> Projects </h2>
     These are some projects I am pretty happy about/proud of. 
     </br></br>
+    <li> <a href="https://github.com/DMGDy/https-server">http(s) server</a>
+	    <ul>
+		    <li> I aim this project to replace httpd/apache that hosts this website so I can HOPEFULY have
+			    more defined control of connections thats "easier" for me to manage instead of 
+			    figuring out how to configure httpd/apache. Still early in development (as of February 28).
+		    </li>
+		    <li> A big challenge will be implementing SSL/TLS with 
+			    <a href="https://github.com/openssl/openssl">openssl</a> as I have not had
+			    any experience doing so.
+		    </li>
+	    </ul>
+    </li>
     <li> <a href="https://github.com/DMGDy/epic-bar-rs">Custom Status Bar in Rust with GTK4</a>
 	    <details>
 		    <summary>Click to view more details</summary>
@@ -83,8 +98,7 @@
 
 		<ul>
 
-			<li> This is still very early in current developement, I recommend checking the github repository
-				for more detail on current development. (as of 26 January 2025)
+			<li> This is my daily status-bar I use on my main machine.
 			</li>
 			<li> Reads and writes to <a href="https://wiki.hyprland.org/IPC/">Hyprland's IPC UNIX Sockets</a>
 				to check for workspace/client events to update widgets and to respond to click handlers
