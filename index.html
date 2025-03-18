@@ -80,11 +80,19 @@
 		    <li> I aim this project to replace httpd/apache that hosts this website so I can HOPEFULY have
 			    more defined control of connections thats "easier" for me to manage instead of 
 			    figuring out how to configure httpd/apache. Still early in development (as of February 28).
+                <li> I abuse a finite state machine approach to parse through the headers as it makes the most
+                    sense (assuming everything there is correct)
+                </li>
 		    </li>
-		    <li> A big challenge will be implementing SSL/TLS with 
-			    <a href="https://github.com/openssl/openssl">openssl</a> as I have not had
-			    any experience doing so.
-		    </li>
+            <li> Server properly handles HTTP headers and striclty allows only <div class="code">GET</div>
+                and strictly serves files that are explicitly defined.
+            </li>
+		    <li> Currently implementing SSL/TLS with 
+			    <a href="https://github.com/openssl/openssl">openssl</a> and testing with a self-signed certificate
+                with mkcert.
+            </li>
+            <li> Using Tsodings <a href="https://github.com/tsoding/nob.h/">nob.h</a> to build the program.
+            </li>
 	    </ul>
 	    </details>
     </li>
