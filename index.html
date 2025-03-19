@@ -17,7 +17,7 @@
     </center>
     </div>
 
-    </hr >
+    </hr>
     
     <div class="contact">
 	    email: <span>dylanmatthew<em>[dot]</em>garza<em>[at]</em>gmail<em>[dot]</em>com</span>
@@ -32,6 +32,12 @@
     	My name is Dylan Dy (or Dylan-Matthew Garza). 
 	I graduated with a degree in Computer Engineering (December 2024), but its kinda means nothing beyond 
 	letting me have a job that requires a degree.
+    </p>
+    <p>
+    If you are reading this, you probably care enough to know I am currently<sup>*</sup> working as a Firmware Engineer 
+    at Resideo in the NYC Metropolitan Area.
+    </br>
+    <sup>*<i>start date: April 7</i></sup>
     </p>
     <p>
     In terms of technologies, I am very interested in Linux, embedded Linux, programming (systems, embedded, firmware,
@@ -87,15 +93,16 @@
             <li> Server properly handles HTTP headers and striclty allows only <div class="code">GET</div>
                 and strictly serves files that are explicitly defined.
             </li>
-		    <li> Currently implementing SSL/TLS with 
+		    <li> Implemented SSL/TLS with 
 			    <a href="https://github.com/openssl/openssl">openssl</a> and testing with a self-signed certificate
-                with mkcert.
+                with <a href="https://github.com/FiloSottile/mkcert">mkcert</a>.
             </li>
             <li> Using Tsodings <a href="https://github.com/tsoding/nob.h/">nob.h</a> to build the program.
             </li>
 	    </ul>
 	    </details>
     </li>
+
     <li> <a href="https://github.com/DMGDy/epic-bar-rs">Custom Status Bar in Rust with GTK4</a>
 	    <details>
 		    <summary>Click to view more details</summary>
@@ -172,23 +179,22 @@
 		 ME ALONE -- DYLAN-MATTHEW GARZA AKA DYLAN DY 
 	 </strong></em>
       <ul>
-        <li> <strong>Custom embedded Linux image using the 
+          <li> <a href="https://github.com/DMGDy/meta-zf-project"><strong>Custom embedded Linux image </a> using the 
 	<a href="https://www.yoctoproject.org/">Yocto Project</a> </strong>
 		 using STM32MP157F-DK2 with custom layer.
 	    <a href="https://github.com/DMGDy/meta-zf-project">here</a>. Built/ installed other software I wrote 
 	    for the project. Uses custom generated device tree from STM32CubeMx and patched stm32mp1 Linux kernel
 	    device tree. Also used a custom defconfig for loading necessary kernel modules.
 	</li>
-	<li> <strong>WebAssembly (WASM) application written in Rust</strong>
+    <li> <a href="https://github.com/DMGDy/zf-yew-app"><strong>WebAssembly (WASM) application written in Rust</strong></a>
 				using the <a href="https://yew.rs/">Yew framework</a>.
-		(link to the repo <a href="https://github.com/DMGDy/zf-yew-app">here</a>) Simple user interface
+		Simple user interface
 		for device testers to interact with to see real time results and remotely test devices.
 	</li>
-	<li> <strong>Custom API application server written in Rust</strong>
+    <li> <a href="https://github.com/DMGDy/zf-webserver-app"><strong>Custom API application server written in Rust</strong></a>
 		,meant to interact with server to load ARM Cortex-M4 firmware
 		and communicate to firmware regarding the state of the test, results, and recoreded realtime data
-		saved to the kernel trace buffer. 
-		(link to repo <a href="https://github.com/DMGDy/zf-webserver-app">here</a>. Used the
+		saved to the kernel trace buffer. Used the
 		<a href="https://github.com/seanmonstar/warp">warp web server framework</a>, which is a minimal 
 		framework that allows filtering of HTTP requests. 
     <li> <strong> Microcontroller (ARM M4) Firmware </strong> created communication system between firmware and the 
